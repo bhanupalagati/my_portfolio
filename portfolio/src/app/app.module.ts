@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfessionalComponent } from './professional/professional.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { CardComponent } from './card/card.component';
+import { CertificatesComponent } from './professional/certificates/certificates.component';
 
 declare var require
 @NgModule({
@@ -16,7 +17,8 @@ declare var require
     AppComponent,
     HomeComponent,
     ProfessionalComponent,
-    CardComponent
+    CardComponent,
+    CertificatesComponent
   ],
   imports: [
     BrowserModule,

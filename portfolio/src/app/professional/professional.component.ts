@@ -8,20 +8,18 @@ import { DataService } from './data.service';
 })
 export class ProfessionalComponent implements OnInit {
   options: any;
-  imgPopup: {source: string, alt: string};
+  skills: any
   constructor(private dataService: DataService) { }
-  showPopup = false;
   ngOnInit(): void {
     this.options = {...this.dataService.getChartOptions()};
+    this.skills = this.dataService.getSkills();
   }
 
   openUrl(loc) {
     window.open(loc, "_blank");
   }
-  getClickedImage(id){
-    this.imgPopup = this.dataService.getImages(id);
-    this.showPopup = true;
-  }
+
+
 
 
 }

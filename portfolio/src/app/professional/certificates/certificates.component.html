@@ -1,0 +1,34 @@
+<!-- Certifications -->
+
+<div class="row" style="padding-bottom: 25px;" *ngFor="let row of rows">
+    <div class="col-md-3" (click)="getClickedImage(col.id)" *ngFor="let col of row">
+        <app-card>
+            <ng-container front>
+                <h1 class="cardHeader"> 
+                        {{col.fheader}}
+                </h1>
+                <div class="cardContent" style="padding-top: 20px; font-size: 35px;">
+                    {{col.fcontent}}
+                    <h3 style="padding-top: 20px; font-size: 20px; color: green; bottom: 0;">Click on the card to see certificate</h3>
+                </div>
+            </ng-container>
+            <ng-container back>
+                <h1 class="cardHeader">
+                    {{col.bheader}}
+                </h1>
+                <div class="cardContent">
+                    <!-- Back Side -->
+                </div>
+            </ng-container>
+        </app-card>
+    </div>
+</div>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal" *ngIf="showPopup">
+    <span class="close" (click)="showPopup=false">&times;</span>
+    <img [src]="imgPopup.source" class="modal-content">
+    <div id="caption">{{ imgPopup.alt }}</div>
+  </div>

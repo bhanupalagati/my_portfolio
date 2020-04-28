@@ -31,13 +31,13 @@
   .flip-card-front {
     background-color: white;
     color: black;
-    border: 5px solid orange;
+    border: 5px solid #b5bd90;
 
   }
   
   .flip-card-back {
-    background-color: #8db1ab;
+    background-color: #d7fffd;
     color: white;
     transform: rotateY(180deg);
-    border: 5px solid blueviolet;
+    border: 5px solid #b5bd90;
   }
