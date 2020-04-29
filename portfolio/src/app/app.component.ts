@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  onActivate(e, outlet){
+    window.scrollTo(0,0)
+    outlet.scrollTop = 0;
+  }
 }

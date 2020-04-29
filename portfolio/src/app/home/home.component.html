@@ -1,8 +1,8 @@
 <div class="bgimg">
     <div class="textCenter">
-        <p>Bhanu</p>
-        <p>Palagati's</p>
-        <p>Realm Begins</p>
+        <p>WELCOME</p>
+        <p>THANKS FOR VISITING</p>
+        <p>BHANU PALAGATI</p>
     </div>
 </div>
 
@@ -23,7 +23,7 @@
     </div>
 </div>
 
-<div style="background-color: gray; padding-bottom: 50px;">
+<div style="background-color: gray; padding-bottom: 50px;" routerLink="/professional-career" routerLinkActive="active">
     <div class="sectionHeader" style="color: white;">
         <span style="border-bottom: 5px solid orange;">Professional Information</span>
     </div>
@@ -39,6 +39,6 @@
     </div>
 </div>
 
-<agm-map [latitude]="latitude" [longitude]="longitude" style="height: 500px;">
+<agm-map [zoom]="20" [latitude]="latitude" [longitude]="longitude" style="height: 500px;">
     <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
 </agm-map>
