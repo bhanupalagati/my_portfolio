@@ -19,7 +19,7 @@ chart {
     color: white;
 }
 .explain {
-    font-family: 'Girassol', cursive;
+    font-family: 'Inconsolata', monospace;
     font-weight: 500;
     font-size: 18px;
 }
@@ -34,12 +34,19 @@ chart {
     padding-top: 10px;
     padding-bottom: 20px;
     color: black;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+.remove_margin {
+    p{
+        margin-bottom: 2px;
+    }
 }
 
 .cardContent{
-    font-family: 'Girassol', cursive;
+    font-family: 'Inconsolata', monospace;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     color: black;
 }
